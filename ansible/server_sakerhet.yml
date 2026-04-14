@@ -1,0 +1,12 @@
+---
+- name: Konfigurera användare och rättigheter på filservern
+  hosts: all
+  become: yes
+  tasks:
+    - name: Skapa Grupp A och Grupp B
+      group:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - grupp_a
+        - grupp_b
