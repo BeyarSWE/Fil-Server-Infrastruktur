@@ -10,3 +10,9 @@
       loop:
         - grupp_a
         - grupp_b
+
+    - name: Skapa testanvändaren Jacob i Grupp A
+      user:
+        name: jacob_a
+        group: grupp_a
+        password: "test123"
