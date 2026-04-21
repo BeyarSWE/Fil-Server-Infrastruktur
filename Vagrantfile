@@ -9,3 +9,11 @@ Vagrant.configure("2") do |config|
         ansible.playbook = "asnible/filserver.yml"
     end
 end
+
+# Sätt upp Klienten (som Jacob ska använda senare)
+  config.vm.define "client" do |client|
+    client.vm.box = "ubuntu/jammy64"
+    client.vm.hostname = "client"
+    client.vm.network "private_network", ip: "192.168.50.11"
+  end
+end
