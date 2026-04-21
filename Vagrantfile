@@ -1,16 +1,16 @@
 Vagrant.configure("2") do |config|
-    # Sätt upp Filservern
+  # Sätt upp Filservern
   config.vm.define "fileserver" do |server|
-    server.vm.box = "ubuntu/SAKNAS"
+    server.vm.box = "ubuntu/jammy64"
     server.vm.hostname = "fileserver"
     server.vm.network "private_network", ip: "192.168.50.10"
-
+    
     server.vm.provision "ansible" do |ansible|
-        ansible.playbook = "asnible/filserver.yml"
+      ansible.playbook = "ansible/fileserver.yml"
     end
-end
+  end
 
-# Sätt upp Klienten (som Jacob ska använda senare)
+  # Sätt upp Klienten (som Jacob ska använda senare)
   config.vm.define "client" do |client|
     client.vm.box = "ubuntu/jammy64"
     client.vm.hostname = "client"
