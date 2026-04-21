@@ -1,0 +1,32 @@
+---
+- name: Montera nätverksmappar på klienten
+  hosts: all
+  become: yes
+  tasks:
+    - name: Installera NFS-klientverktyg
+      apt:
+        name: nfs-common
+        state: present
+        update_cache: yes
+
+    - name: Skapa lokala mappar på klienten att montera i
+      file:
+        path: "/mnt/{{ item }}"
+        state: directory
+      loop:
+        - gemensam
+        - avdelning-a
+
+    - name: Montera mappen Gemensam från servern
+      mount:
+        path: /mnt/gemensam
+        src: 192.168.50.10:/shares/gemensam
+        fstype: nfs
+        state: mounted
+
+    - name: Montera mappen Avdelning A från servern
+      mount:
+        path: /mnt/avdelning-a
+        src: 192.168.50.10:/shares/avdelning-a
+        fstype: nfs
+        state: mounted
