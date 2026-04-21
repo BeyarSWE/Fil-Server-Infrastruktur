@@ -16,3 +16,18 @@
         name: jacob_a
         group: grupp_a
         password: "test123"
+        
+    - name: Sätt rättigheter på Avdelning A (Bara Grupp A får komma in)
+      file:
+        path: /shares/avdelning-a
+        owner: root      # <--- Ägare
+        group: grupp_a   # <--- Grupptillhörighet
+        mode: '0770'     # <--- Hur mycket tillgång (7=allt, 0=inget)
+
+    - name: Sätt rättigheter på Avdelning B (Bara Grupp B får komma in)
+      file:
+        path: /shares/avdelning-b
+        owner: root
+        group: grupp_b
+        mode: '0770'
+        
