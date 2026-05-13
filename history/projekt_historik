@@ -1,0 +1,36 @@
+
+  Id CommandLine                                                                                                                                                                                                
+  -- -----------                                                                                                                                                                                                
+   1 ls                                                                                                                                                                                                         
+   2 vagrant up                                                                                                                                                                                                 
+   3 cd C:\Users\beyar\OneDrive\Dokument\Fil-Server-Infrastruktur                                                                                                                                               
+   4 ls                                                                                                                                                                                                         
+   5 vagrant up                                                                                                                                                                                                 
+   6 git add .                                                                                                                                                                                                  
+   7 cd                                                                                                                                                                                                         
+   8 git status                                                                                                                                                                                                 
+   9 git add .                                                                                                                                                                                                  
+  10 git commit -m "updaterar ansible till ansible_local så att man kan köra det på windows"                                                                                                                    
+  11 git push                                                                                                                                                                                                   
+  12 vagrant up                                                                                                                                                                                                 
+  13 vagrant ssh fileserver -c "sudo exportfs -ra && sudo systemctl restart nfs-kernel-server"                                                                                                                  
+  14 vagrant provision client                                                                                                                                                                                   
+  15 vagrant ssh fileserver -c "sudo exportfs -ra && sudo systemctl restart nfs-kernel-server"                                                                                                                  
+  16 vagrant provision fileserver                                                                                                                                                                               
+  17 vagrant reload fileserver                                                                                                                                                                                  
+  18 vagrant provision fileserver                                                                                                                                                                               
+  19 vagrant provision client                                                                                                                                                                                   
+  20 bash verifiering.sh                                                                                                                                                                                        
+  21 vagrant ssh client -c "bash /vagrant/verifiering.sh"                                                                                                                                                       
+  22 git status                                                                                                                                                                                                 
+  23 git add .                                                                                                                                                                                                  
+  24 git commit -m "senaste updateringar convertering från linux till windows"                                                                                                                                  
+  25 git push                                                                                                                                                                                                   
+  26 vagrant ssh client -c "bash /vagrant/verifiering.sh"                                                                                                                                                       
+  27 vagrant ssh client -c "bash /vagrant/verifiering.sh"                                                                                                                                                       
+  28 vagrant ssh client -c "sudo useradd -m jacob_a"                                                                                                                                                            
+  29 vagrant ssh client -c "bash /vagrant/verifiering.sh"                                                                                                                                                       
+  30 vagrant ssh client -c "bash /vagrant/verifiering.sh"                                                                                                                                                       
+  31 vagrant ssh client -c "bash /vagrant/verifiering.sh"                                                                                                                                                       
+
+
