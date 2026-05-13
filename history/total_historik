@@ -1,0 +1,247 @@
+claude
+vagrant --version.
+vagrant --version.vag
+vagrant --version
+Get-Content ~/.ssh/id_ed25519.pub | Set-Clipboard
+ssh -t git@hithub.com
+s
+ssh -t git@github.com 
+ssh -T -p 433 git@ssh.github.com
+@"`
+Host github.com`
+    Hostname ssh.github.com`
+    Port 443`
+    User git`
+"@ | Set-Content -Path ~/.ssh/config
+ssh -T git@github.com
+cd documents
+git clone
+git clone git@github.com:BeyarSWE/ssh-test.git
+cd ssh-test
+#hej vÃ¤rlden jag Ã¤r bÃ¤st
+git add
+git .
+git add
+git commit -m "Skapade min fÃ¶rsta textfil"
+git add hej.txt
+git commit -m "Skapade min fÃ¶rsta textfil"
+git push
+git config --global user.name "BeyarSWE"
+git config --global user.email "Beyaryusuf0224@gmail.com"
+git clone
+git push
+cit glone
+cit clone
+git status
+git add.
+git add .
+git add guide.md
+git commit -m "guide fÃ¶r ssh nyckel i github"
+git push
+git check main
+git checkout main
+git pull
+git checkout -b branch
+git add .
+git commit -m "la till en ny sak"
+git push
+git push -u orgin branch
+git checkout -b testbeyar
+git add .
+git commit -m "la till en ny sak"
+git add .
+test
+git add test2.
+git pull
+ssh -t git@github.com
+restart
+git status
+git checkout -b test-ssh
+git commit -m "la till en ny sak"
+git status
+cd documents
+cd ..
+git clone git@github.com:BeyarSWE/ssh-test.git
+cd ssh-test
+echo "test" > nytext.txt
+git add.
+git add .
+git add nytext.txt
+git commit -m "testade den"
+git push
+cd ..
+mkdir labb1,2,3
+mkdir labb123
+mkdir Labb123
+cd labb123
+git init
+echo "detta Ã¤r bara bÃ¶rjan" > Dokumentation.txt
+git add .
+git add
+git commit -m "min fÃ¶rsta repo genom powershell"
+git branch -M main
+git remote add orgin git@github.com:BeyarSWE/labb123.git
+git push -u orgin main
+cd ..
+cd ssh-test
+git checkout main
+git pull
+git checkout -b beyar
+echo "beyar Ã¤r bÃ¤st" > Beyar.txt
+git add .
+git commit -m "lade till ny branch och text dokument"
+git checkout main
+git marge beyar
+git merge beyar
+git push
+git branch
+cd testbeyar
+git switch
+git switch testbeyar
+git switch main
+git checkout -b 123
+git branch
+echo "hej123" > hej123.txt
+git add .
+git commit -m "lagt till hej123"
+git push
+git push --set-upstream origin 123
+echo "readme" > readme.md
+git add .
+git commit -m "test" 
+git push
+git checkout main
+git merge 123
+git branch
+git push 
+ssh student@192.168.56.255
+ssh student@192.168.56.108
+cd ..
+git clone git@github.com:BeyarSWE/Fil-Server-Infrastruktur.git
+cd ~\Documents
+git clone git@github.com:BeyarSWE/Fil-Server-Infrastruktur.git
+git checkout -b feature/beyar-vagrant-och-server
+cd C:\Users\beyar\Documents\Fil-Server-Infrastruktur
+git checkout -b feature/beyar-vagrant-och-server
+git push
+git push --set-upstream origin feature/beyar-vagrant-och-server
+git status
+git branch
+git pull
+git branch
+switch main
+git branch main
+git switch main
+git switch 
+git checkot
+git checkout
+git branch
+git branch -a
+git fetch
+git branch
+git checkout test-branch
+git checkout feature/Jacob-anvandare-och-klient
+git branch
+git checkout feature/beyar-vagrant-och-server
+git branch
+git branch -m vagrant
+git push -u origin vagrant
+git push origin --delete feature/beyar-vagrant-och-server
+git branch
+git checkout -b vagrant
+git branch
+new-item -path "Vagrantfile"
+new-item -path "Vagrantfile" -ItemType File
+New-Item -Path "Vagrantfile" -ItemType File
+New-Item -ItemType Directory -Force -Path "ansible"
+New-Item -Path "ansible\fileserver.yml" -ItemType File
+New-Item -Path "Vagrantfile" -ItemType File
+New-Item -ItemType Directory -Force -Path "ansible"
+New-Item -Path "ansible\fileserver.yml" -ItemType File 
+git status
+git add
+git add Vagrantfile
+git status
+git commit -m "nu skapa jag vagrantfilen"
+git push
+git status
+git add .
+git commit -m "jag skapade Asnible filen och jag satte upp fil servern grundligt"
+git push
+git status
+git add Vagrantfile
+git commit -m "Skapar ansible och playbook"
+git push
+git status
+git branch
+pwd
+dir
+cd C:\Users\beyar\OneDrive\Dokument\Fil-Server-Infrastruktur
+git status
+git add.
+git add .
+git commit -m "satte upp klient fÃ¶r jacob som han ska anvÃ¤nda senare"
+git push
+git status
+git add .
+git commit -m "automatiserar den uppsÃ¤ttningen av en NFS-server"
+git push
+git status
+git add .
+git commit -m "uppdaterar till senaste vagrant koderna"
+git push
+git status
+git commit -m "Uppdaterar vagrant filen sÃ¥ att den blir kompatibel med jacobs del"
+gitt add .
+gitt add.
+git commit -m "Uppdaterar vagrant filen sÃ¥ att den blir kompatibel med jacobs del"
+gitt add
+gitt add .
+gitt add Vagrant
+git status
+git add .
+git commit -m "Uppdaterar vagrant filen sÃ¥ att den blir kompatibel med jacobs del"
+git push
+C:\Users\beyar\OneDrive\Dokument\Fil-Server-Infrastruktur
+git status
+git branch
+.git
+cd C:\Users\beyar\OneDrive\Dokument\Fil-Server-Infrastruktur
+git status
+git checkout main git pull origin main
+git checkout main
+git pull origin main
+git branch
+git merge Vagrant
+git push origin main
+git pull
+ls
+vagrant up
+cd C:\Users\beyar\OneDrive\Dokument\Fil-Server-Infrastruktur
+ls
+vagrant up
+git add .
+cd
+git status
+git add .
+git commit -m "updaterar ansible till ansible_local sÃ¥ att man kan kÃ¶ra det pÃ¥ windows"
+git push
+vagrant up
+vagrant ssh fileserver -c "sudo exportfs -ra && sudo systemctl restart nfs-kernel-server"
+vagrant provision client
+vagrant ssh fileserver -c "sudo exportfs -ra && sudo systemctl restart nfs-kernel-server"
+vagrant provision fileserver
+vagrant reload fileserver
+vagrant provision fileserver
+vagrant provision client
+bash verifiering.sh
+vagrant ssh client -c "bash /vagrant/verifiering.sh"
+git status
+git add .
+git commit -m "senaste updateringar convertering frÃ¥n linux till windows"
+git push
+vagrant ssh client -c "bash /vagrant/verifiering.sh"
+vagrant ssh client -c "sudo useradd -m jacob_a"
+vagrant ssh client -c "bash /vagrant/verifiering.sh"
+history | Out-File projekt_historik.txt
+Get-Content (Get-PSReadlineOption).HistorySavePath | Out-File total_historik.txt
