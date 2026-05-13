@@ -1,18 +1,16 @@
 #!/bin/bash
 echo "--- Startar Säkerhetstest (VG-krav) ---"
 
-echo "Test 1: Försöker skapa en fil i Avdelning A som användare jacob_a (Ska lyckas)"
-vagrant ssh fileserver -c "sudo su - jacob_a -c 'touch /shares/avdelning-a/lyckat_test.txt'"
-if [ $? -eq 0 ]; then
-    echo "✔ Test 1: Lyckades! Rättigheterna stämmer."
+# Test 1: Försöker skapa en fil i Avdelning A som användare jacob_a
+echo "Test 1: Försöker skriva till Avdelning A (Ska lyckas)..."
+sudo -u jacob_a touch /mnt/avdelning-a/test_fil.txt && echo "Resultat: LYCKADES (Jacob kan skriva i sin mapp)" || echo "Resultat: MISSLYCKADES"
+
+# Test 2: Försöker skriva till Avdelning B som användare jacob_a
+echo "Test 2: Försöker skriva till Avdelning B (Ska blockeras)..."
+if sudo -u jacob_a touch /mnt/avdelning-b/tjuv_fil.txt 2>/dev/null; then
+    echo "Resultat: MISSLYCKADES (Säkerhetsbrist! Jacob kunde skriva i fel mapp)"
 else
-    echo "❌ Test 1: Misslyckades."
+    echo "Resultat: LYCKADES (Åtkomst nekad - Säkerheten fungerar!)"
 fi
 
-echo "Test 2: Försöker skapa en fil i Avdelning B som användare jacob_a (Ska blockeras)"
-vagrant ssh fileserver -c "sudo su - jacob_a -c 'touch /shares/avdelning-b/olagligt_test.txt'"
-if [ $? -ne 0 ]; then
-    echo "✔ Test 2: Lyckades! Jacob blev blockerad från Avdelning B."
-else
-    echo "❌ Test 2: Misslyckades! Säkerhetsrisk - Jacob kunde skriva i fel mapp."
-fi
+echo "--- Test slutfört ---"
