@@ -9,12 +9,12 @@ Vagrant.configure("2") do |config|
     server.vm.network "private_network", ip: "192.168.50.10"
     
     # STEG A: Kör Beyars grundinstallation (Installerar NFS och skapar mappar)
-    server.vm.provision "ansible" do |ansible|
+    server.vm.provision "ansible_local" do |ansible|
       ansible.playbook = "ansible/fileserver.yml"
     end
 
     # STEG B: Kör Jacobs säkerhetskonfiguration (Användare, grupper och hänglås)
-    server.vm.provision "ansible" do |ansible|
+    server.vm.provision "ansible_local" do |ansible|
       ansible.playbook = "ansible/server_sakerhet.yml"
     end
   end
@@ -28,7 +28,7 @@ Vagrant.configure("2") do |config|
     client.vm.network "private_network", ip: "192.168.50.11"
 
     # STEG C: Kör Jacobs monteringsskript (Kopplar ihop klienten med servern)
-    client.vm.provision "ansible" do |ansible|
+    client.vm.provision "ansible_local" do |ansible|
       ansible.playbook = "ansible/klient_montering.yml"
     end
   end
