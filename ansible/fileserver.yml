@@ -1,0 +1,40 @@
+---
+- name: Sätt upp NFS Filserver
+  hosts: all
+  become: yes
+  tasks:
+    - name: Installera NFS-server
+      apt:
+        name: nfs-kernel-server
+        state: present
+        update_cache: yes
+
+    - name: Skapa huvudmappen
+      file:
+        path: /shares
+        state: directory
+        mode: '0755'
+
+    - name: Skapa undermappar
+      file:
+        path: "{{ item }}"
+        state: directory
+        mode: '0777'
+      loop:
+        - /shares/gemensam
+        - /shares/avdelning-a
+        - /shares/avdelning-b
+
+    - name: Konfigurera utdelning till klienten (IP 192.168.50.11)
+      blockinfile:
+        path: /etc/exports
+        block: |
+          /shares/gemensam    192.168.50.11(rw,sync,no_subtree_check)
+          /shares/avdelning-a 192.168.50.11(rw,sync,no_subtree_check)
+          /shares/avdelning-b 192.168.50.11(rw,sync,no_subtree_check)
+
+    - name: Starta om NFS-tjänsten
+      systemd:
+        name: nfs-kernel-server
+        state: restarted
+        enabled: yes
