@@ -61,5 +61,5 @@ To build and run the entire infrastructure, **VirtualBox** and **Vagrant** are r
 
 1. **Clone the repository:**
    ```bash
-   git clone <link-to-your-repo>
+   git clone <https://github.com/BeyarSWE/Fil-Server-Infrastruktur>
    cd Fil-Server-Infrastruktur
