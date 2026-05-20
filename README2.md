@@ -167,6 +167,6 @@ Eftersom vår miljö strikt består av Ubuntu Linux var NFS det mest logiska val
 Under utvecklingen av vårt Bash skript i Windows stötte vi på problemet $'\r': command not found. Detta berodde på osynliga Windows radbrytningar (CRLF). Vårt designval blev att strikt konvertera script filerna till Linux standard (LF) i VS Code för att säkerställa att de körs felfritt via Vagrant.
 
 ---
-Kurs: Virtualiseringsteknik & Automation
-Skapad av: Beyar & Jacob
-år: 2026-05-20
+### Kurs: Virtualiseringsteknik & Automation
+#### Skapad av: Beyar & Jacob
+### år: 2026-05-20
