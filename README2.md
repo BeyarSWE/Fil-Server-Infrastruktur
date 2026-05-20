@@ -169,4 +169,4 @@ Under utvecklingen av vårt Bash skript i Windows stötte vi på problemet $'\r'
 ---
 ### Kurs: Virtualiseringsteknik & Automation
 #### Skapad av: Beyar & Jacob
-### år: 2026-05-20
+#### år: 2026-05-20
